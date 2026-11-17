@@ -4,8 +4,9 @@
         background-image: url('../img/hero.webp');
         background-position: center;
         background-size: cover;
+        border-radius: 2rem;
         &--titulo {
-            font-size: 5.5rem;
+            font-size: 6.2rem;
             font-family: v.$font-inter;
             color: v.$color-primary;
         }

@@ -6,12 +6,34 @@
 }
 
 .btn {
-    // background-color: v.$color-azul-intenso;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-family: v.$font-inter;
-    color: white;
-    padding: .8rem 4rem;
+    padding: 1rem 4rem;
     border-radius: 1.5rem;
+    transition: all .3s;
+    &-primary {
+        background-color: v.$color-primary;
+        color: v.$color-blanco;
+        &:hover {
+            background-color: v.$color-primary-light;
+            transition: all .3s;
+        }
+    }
+    &-secondary {
+        background-color: v.$color-azul-intenso;
+        color: v.$color-blanco;
+        &:hover {
+            background-color: v.$color-azul-vivo;
+            transition: all .3s;
+        }
+    }
+    &-compra {
+        color: v.$color-azul-intenso;
+        text-transform: capitalize;
+    }
+    &:hover {
+        box-shadow: .5rem .5rem 1rem v.$color-primary-light;
+    }
 }
 
 .pt-1 {

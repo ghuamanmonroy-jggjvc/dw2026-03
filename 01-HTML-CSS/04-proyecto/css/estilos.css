@@ -26,11 +26,34 @@ a {
 }
 
 .btn {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-family: "Inter", sans-serif;
-  color: white;
-  padding: 0.8rem 4rem;
+  padding: 1rem 4rem;
   border-radius: 1.5rem;
+  transition: all 0.3s;
+}
+.btn-primary {
+  background-color: #172033;
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background-color: #2f3a52;
+  transition: all 0.3s;
+}
+.btn-secondary {
+  background-color: #0961e8;
+  color: #ffffff;
+}
+.btn-secondary:hover {
+  background-color: #3570c7;
+  transition: all 0.3s;
+}
+.btn-compra {
+  color: #0961e8;
+  text-transform: capitalize;
+}
+.btn:hover {
+  box-shadow: 0.5rem 0.5rem 1rem #2f3a52;
 }
 
 .pt-1 {
@@ -415,9 +438,10 @@ a {
   background-image: url("../img/hero.webp");
   background-position: center;
   background-size: cover;
+  border-radius: 2rem;
 }
 .header__container--titulo {
-  font-size: 5.5rem;
+  font-size: 6.2rem;
   font-family: "Inter", sans-serif;
   color: #172033;
 }
@@ -425,6 +449,45 @@ a {
   font-size: 1.4rem;
   font-family: "Manrope", sans-serif;
   color: #172033;
+}
+
+.productos__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.productos__container__card {
+  border: 0.2rem solid #edeef3;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.productos__container__card__imgBox {
+  height: 20rem;
+  background-color: #edeef3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productos__container__card__imgBox img {
+  height: 100%;
+  display: block;
+}
+.productos__container__card__data {
+  padding: 1.5rem;
+}
+.productos__container__card__data--titulo {
+  color: #172033;
+  font-size: 1.5rem;
+  font-family: "Manrope", sans-serif;
+  text-transform: capitalize;
+}
+.productos__container__card__data--precio {
+  color: #0961e8;
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=estilos.css.map */
